@@ -37,12 +37,6 @@ public class ValidNumber {
             i++;
             isNumber = true;
         }
-        if (i<n &&s.charAt(i) == 'e') {
-        	i++;
-			if (i >= n || (!Character.isDigit(s.charAt(i)))) {
-				return false;
-			}
-		}
         if(i < n && (s.charAt(i) == '.')){
             i ++;
             while(i<n && Character.isDigit(s.charAt(i))){
@@ -51,6 +45,17 @@ public class ValidNumber {
             }
             
         }
+        if (isNumber && i < n && s.charAt(i)=='e') {
+			i++;
+			isNumber= false;
+			if(i<n && (s.charAt(i)=='+'||s.charAt(i)=='-')){
+				i++;
+			}
+			while(i<n && Character.isDigit(s.charAt(i))){
+				i++;
+				isNumber = true;
+			}
+		}
         while(i<n && Character.isWhitespace(s.charAt(i))){
                 i++;
         }

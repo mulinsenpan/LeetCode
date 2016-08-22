@@ -1,4 +1,4 @@
-package hard;
+package ArrayAndString;
 
 import java.util.Scanner;
 

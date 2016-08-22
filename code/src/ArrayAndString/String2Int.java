@@ -1,4 +1,4 @@
-package easy;
+package ArrayAndString;
 
 /**
  * implement atoi to convert a string to an integer.

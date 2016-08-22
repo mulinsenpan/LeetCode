@@ -1,4 +1,4 @@
-package easy;
+package ArrayAndString;
 
 import java.awt.RenderingHints;
 

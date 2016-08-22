@@ -1,4 +1,4 @@
-package easy;
+package ArrayAndString;
 
 import javax.print.attribute.standard.NumberUpSupported;
 
